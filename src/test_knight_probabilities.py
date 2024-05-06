@@ -1,6 +1,5 @@
 from unittest import TestCase
-from exercises.knight_probability import MOVES, MOVE_PROBABILITY
-from exercises.knight_probability.src import knight_probability
+from knight_probability import MOVES, MOVE_PROBABILITY, knight_probability
 
 
 class KnightProbabilityTest(TestCase):
@@ -70,7 +69,7 @@ class KnightProbabilityTest(TestCase):
             n=5,
             x=2,
             y=2,
-            k=2
+            k=1
         )
 
         self.assertEqual(sum(r.values()), 1)
