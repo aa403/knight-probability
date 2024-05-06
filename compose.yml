@@ -1,0 +1,17 @@
+version: "3.8"
+
+services:
+  kp-streamlit:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    restart: unless-stopped
+    volumes:
+      - ./src:/home/app
+    ports:
+        - "8501:8501"
+    deploy:
+      resources:
+        limits:
+          cpus: "1"
+          memory: 1G

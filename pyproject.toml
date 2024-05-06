@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "knight probbaility"
+version = "0.0.1"
+description = ""
+authors = ["Ammar Akhtar"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "~3.11"
+streamlit = "*"
+watchdog = "*"
+pandas = "*"
+altair = "*"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+
+[[tool.poetry.source]]
+name = "PyPI"
+priority = "primary"
+
